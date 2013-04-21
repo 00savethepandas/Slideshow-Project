@@ -1,0 +1,152 @@
+/* CSS Document */
+
+/* SLIDESHOW STYLES */
+body {
+	font-family:arial;	
+}
+
+img {
+	border:0;
+}
+#MainDivForEverything {
+	margin: auto;
+}
+
+#main-picture {
+	width:429px; 
+	float:left; 
+	margin:auto;	
+}
+
+#main-picture ul {
+	margin:0; 
+	padding:0; 
+	width:429px;
+}
+
+#main-picture li {
+	width:429px; 
+	height:290px; 
+	display:none;
+	position:relative;
+}
+
+#main-picture li.active {
+	display:block !important;
+}
+
+#main-picture li span.opacity {
+	position:absolute;
+	bottom:0; left:0;
+	display:block; 
+	width:100%;
+	height:60px;
+	background:#000;
+	filter:alpha(opacity=50); 
+	-moz-opacity:0.5; 
+	-khtml-opacity: 0.5; 
+	opacity: 0.5;
+	z-index:500;
+}
+
+#main-picture li span.content {
+	position:absolute;
+	bottom:0; left:0;
+	display:block; 
+	width:100%;
+	height:60px;
+	z-index:1000;
+}
+
+#main-picture li span.content h1 {
+	font-size:14px;
+	margin:5px 0;
+	padding:0 10px;;
+	color:#ff1717;
+}
+
+#main-picture li span.content p {
+	font-size:11px;
+	margin:5px 0;
+	padding:0 10px;;
+	color:#ff1717;
+}
+
+#carousel-div { 
+	float:left;
+	width:210px;
+	position:relative
+	margin: auto;
+}
+
+#carousel-div ul {
+	margin:0; 
+	padding:0;
+	list-style:none;
+}
+
+#carousel-div li {
+	background:#000; 
+	height:97px; 
+	position:relative
+}
+
+#carousel-div li .arrow {
+	left:183px; 
+	top:28px; 
+	position:absolute; 
+	width:20px; 
+	height:40px; 
+	background:url(images/arrow_white.png) no-repeat 0 0; 
+	display:block;
+}
+
+#carousel-div li a {
+	background:#000; 
+	display:block; 
+	width:206px; 
+	height:95px;
+}
+
+
+#carousel-div .active {
+	filter:alpha(opacity=100); 
+	-moz-opacity:1.0; 
+	-khtml-opacity: 1.0; 
+	opacity: 1.0;
+}
+
+#carousel-div .faded {
+	filter:alpha(opacity=50); 
+	-moz-opacity:0.5; 
+	-khtml-opacity: 0.5; 
+	opacity: 0.5;
+}
+
+/* EXAMPLE STYLES */
+            body, html {background: #f7f7f4; font-size: 12px;}
+            #container {width: 810px; margin: 0 auto 0 auto;}
+            #notice {color: #fff; font-weight: bold; font-size: 15px; font-style: italic;}
+            h1 {font-size: 38px; line-height: 45px;}
+            h1 span {font-size: 16px; color: #ff0084;}
+            h1 a:hover span {color: #fff;}
+            #tut-info {width: 810px; margin: 0 0 20px 0;}
+            #tut-info a {float: left; display: block; background: #fff; font-size: 20px; padding: 20px 20px; font-weight: bold; margin: 0 15px 0 0;}
+            #tut-info a:hover {background: #ff0084;}            
+            #loader {margin: 20px 0 40px 350px;}
+            .image-container {height: 180px; width: 240px; position: relative; float: left; margin: 0 20px 20px 0; background-color: #666; border: 5px solid #fff; overflow: hidden;}
+            .image-info {display: none;}
+            .image-info-active {height: 180px; width: 240px; background: rgba(255,255,255,.85);}
+            a {cursor: pointer; text-decoration: none; color: #0063dc;}
+            a:hover {color: #fff; background: #0063dc;}
+            a.title {color: #ff0084;}
+            a.title:hover {color: #fff; background: #ff0084;}
+            .bottom {padding: 5px;}
+            .bottom p {margin: 0 0 5px 0; }
+            p.top {background: #fff; width: 240px; padding: 0 0 5px 0; margin: 0;}
+            a.title {font-size: 20px; font-weight: bold; display: block; line-height: 20px;}
+            span.author {font-size: 10px;}
+            .infoTitle {font-weight: bold; text-trasnform: uppercase;}
+            .clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+            .clearfix {display:inline-block;}
+            .clearfix {display:block;}
